@@ -1,4 +1,4 @@
-Roger-Beep Controller for Arduino Nano — Manual & Wiring Diagrams
+## Roger-Beep Controller for Arduino Nano — Manual & Wiring Diagrams
 Project: put an Arduino Nano between your microphone (PTT) and your transceiver so it
 takes care of the PTT tail (roger beep): when you release the PTT the radio keeps
 transmitting for a moment and you hear one or more beeps.
@@ -34,18 +34,20 @@ Timeline
                                        0..T/3   T/3..2T/3 2T/3..T
                                        (back to back, NO silence between)
 ```
-Pressed — the PTT passes through to the radio almost immediately (max. ~15 ms
+* Pressed — the PTT passes through to the radio almost immediately (max. ~15 ms
 debounce). There is no beep while you are transmitting.
-Released — the Nano keeps the PTT asserted for another `TXDELAY` ms. During that
+* Released — the Nano keeps the PTT asserted for another `TXDELAY` ms. During that
 tail the tone pattern plays: 1, 2 or 3 tones, each with its own frequency
 (700–2000 Hz).
-Tail over — tone off, PTT released, the radio stops transmitting.
+* Tail over — tone off, PTT released, the radio stops transmitting.
+
 Extras the sketch already handles:
-Pressing again during the tail → the tone stops immediately and you keep
+* Pressing again during the tail → the tone stops immediately and you keep
 transmitting; a new tail is not started.
-TXDELAY = 0 → the radio stops as soon as you release the PTT (no tail).
-Button → a short press plays the tone pattern once without transmitting (handy for
+* TXDELAY = 0 → the radio stops as soon as you release the PTT (no tail).
+* Button → a short press plays the tone pattern once without transmitting (handy for
 setting the volume).
+
 The button on D3 — two functions
 The button has a short press and a long press:
 Action	Behaviour
