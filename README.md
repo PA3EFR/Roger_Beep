@@ -19,17 +19,17 @@ The Nano sits inline between microphone and transceiver and has four connections
 ```
 Timeline
 ```
- microphone PTT  \_\_\_\_\_\_\_\_\_\_\_\_\[pressed]\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-                                     |              |
-                                     |              +--- tail ends
-                                     +--- released
+ microphone PTT  _______________|‾‾‾‾‾|____________________________________________
+                                      |             |
+                                      |             +--- tail ends
+                                      +--- released
                                        (tail = TXDELAY)
 
- PTT to radio    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|‾‾‾‾‾‾‾‾‾‾‾|\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-                                       <-- TXDELAY -->
+ PTT to radio     ______________|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾| ______________________________
+                                      <-- TXDELAY -->
                                        (radio keeps transmitting)
 
- BEEP to mic    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|████████|████████|████████|\_\_\_\_\_\_
+ BEEP to mic    _____________________|████|████|████|___________
                                        tone 1   tone 2   tone 3
                                        0..T/3   T/3..2T/3 2T/3..T
                                        (back to back, NO silence between)
