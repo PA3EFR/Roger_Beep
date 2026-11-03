@@ -398,7 +398,6 @@ raised voice, otherwise the transmitter "pumps".
 - The tail feels too short / pressing feels slow	
 --`DEBOUNCE\_MS` is set to 15 ms; set it to 5 if you want a faster response. The settings are gone after `save`	`save` was not executed, or the EEPROM was overwritten by another sketch.
 
----
 # 10. Possible extensions
 A few ideas, from simple to invasive:
 Switching automatically. With a relay (5 V, 1 DPDT) the Nano can operate the
@@ -417,8 +416,8 @@ Hear the tone without transmitting (e.g. as a practice tone on the monitor): the
 button already does this.
 Second UART (D14/D15). Send settings from the transceiver or a display while the
 USB serial stays free for the laptop.
----
-11. Practical notes
+
+# 11. Practical notes
 You may only transmit with a valid amateur radio licence, and you need a correct
 antenna and a dummy load for the first tests.
 The tail means the radio keeps transmitting longer: a short press on the PTT now
@@ -432,8 +431,8 @@ audible.
 With three tones each tone lasts TXDELAY/3. With a small TXDELAY (e.g. 300 ms) that is
 100 ms per tone — short, but audible. For a clearly recognisable run of three tones,
 600–900 ms TXDELAY is more comfortable.
----
-12. The tests (optional)
+
+# 12. The tests (optional)
 The logic of the sketch was tested on the host with an Arduino stub, without real
 hardware:
 ```
