@@ -488,3 +488,11 @@ reloading the EEPROM.
  6. Set lead, tone, exit and the tones from the serial monitor
  7. `save`              -> store the settings
 ```
+
+
+
+
+------
+
+
+Newest version date is most actual design of both schematic as well as PCB
